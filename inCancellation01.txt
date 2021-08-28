@@ -1,0 +1,6 @@
+insert into Cancellation (cancellation_id, refund_amount, reason, status) values ('CNFR001', 871.00, 'Flight reschedule', 'In Process');
+insert into Cancellation (cancellation_id, refund_amount, reason, status) values ('CNFR002', 977.00, 'Flight reschedule', 'Accepted');
+insert into Cancellation (cancellation_id, refund_amount, reason, status) values ('CNFR003', 559.00, 'Flight reschedule', 'In Process');
+insert into Cancellation (cancellation_id, refund_amount, reason, status) values ('CNFC004', 818.00, 'Flight cancellation - COVID-19', 'In Process');
+insert into Cancellation (cancellation_id, refund_amount, reason, status) values ('CNFC005', 1725.00, 'Flight cancellation - COVID-19', 'In Process');
+insert into Cancellation (cancellation_id, refund_amount, reason, status) values ('CNFR006', 768.00, 'Flight reschedule', 'In Process');

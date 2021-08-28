@@ -1,0 +1,5 @@
+insert into destination (destination_id, country, state) values ('DTSG001', 'Singapore', 'Singapore');
+insert into destination (destination_id, country, state) values ('DTCN002', 'China', 'Beijing');
+insert into destination (destination_id, country, state) values ('DTJP003', 'Japan', 'Tokyo');
+insert into destination (destination_id, country, state) values ('DTMY004', 'Malaysia', 'Kuala Lumpur');
+insert into destination (destination_id, country, state) values ('DTKR005', 'Korea', 'Seoul');

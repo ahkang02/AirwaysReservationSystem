@@ -1,0 +1,131 @@
+alter session set nls_date_format='DD-MON-YYYY';
+--Create Table
+--Model Table
+Create Table Model 
+(model_id      VARCHAR(15) NOT NULL,
+ total_seat    NUMBER(4),
+ seat_material VARCHAR(21),
+ seat_type     VARCHAR(21),
+ primary key(model_id)
+);
+
+--Destination Table
+Create Table Destination
+(destination_id VARCHAR(15) NOT NULL,
+ country VARCHAR(31),
+ state VARCHAR(31),
+ primary key(destination_id)
+);
+
+--Aircraft Table
+Create Table Aircraft
+(aircraft_id  VARCHAR(15) NOT NULL,
+ model_id     VARCHAR(15) NOT NULL,
+ condition    VARCHAR(31),
+ status       VARCHAR(31),
+ primary key(aircraft_id),
+ foreign key(model_id) references Model(model_id)
+);
+
+--Pilot Table
+Create Table Pilot
+(pilot_id varchar(15) NOT NULL,
+ pilot_name varchar(31),
+ experience number(2),
+ gender varchar(10),
+ contact_no varchar(14),
+ email varchar(51),
+ primary key(pilot_id),
+ constraint VLD_EMAIL check (REGEXP_LIKE(email,'^[a-zA-Z]\w+@(\S+)$'))
+);
+
+--Staff Table
+Create Table Staff
+(staff_id varchar(15) NOT NULL,
+ pilot_id varchar(15),
+ staff_name varchar(31),
+ gender varchar(10), 
+ position varchar(31),
+ primary key(staff_id),
+ foreign key(pilot_id) references Pilot(pilot_id)
+);
+
+-- Luggage Table
+Create Table Luggage
+(luggage_id  varchar(15) NOT NULL,
+weight NUMBER(4,2),
+luggage_size varchar(12),
+color varchar(15),
+primary key(luggage_id)
+);
+
+
+--Passenger Table
+Create Table Passenger
+(passenger_id VARCHAR(15) NOT NULL,
+ luggage_id VARCHAR(15),
+ pass_name VARCHAR(31),
+ age NUMBER(3),
+ gender VARCHAR(10),
+ contact_no VARCHAR(14),
+ ic_number VARCHAR(16),
+ primary key(passenger_id),
+ foreign key(luggage_id) references Luggage(luggage_id)
+);
+
+
+--Payment Table
+Create Table Payment
+(payment_id VARCHAR(15) NOT NULL,
+ payment_type VARCHAR(21), 
+ payment_status VARCHAR(21),
+ payment_amount NUMBER(8,2),
+ primary key(payment_id)
+);
+
+
+--Cancellation Table
+Create Table Cancellation
+(cancellation_id VARCHAR(15) NOT NULL,
+ refund_amount NUMBER(8,2),
+ reason VARCHAR(31),
+ status VARCHAR(21),
+ primary key(cancellation_id)
+);
+
+
+--Ticket Table
+Create Table Ticket
+(ticket_id VARCHAR(15) NOT NULL,
+ payment_id VARCHAR(15),
+ cancellation_id VARCHAR(15),
+ price NUMBER(8,2),
+ primary key(ticket_id),
+ foreign key(payment_id) references Payment(payment_id)
+);
+
+--Reservation Table
+Create Table Reservation
+(reservation_id VARCHAR(15) NOT NULL,
+ passenger_id VARCHAR(15),
+ ticket_id VARCHAR(15),
+ reservation_date DATE,
+ primary key(reservation_id),
+ foreign key(passenger_id) references Passenger(passenger_id),
+ foreign key(ticket_id) references Ticket(ticket_id)
+);
+
+--Flight Table
+Create Table Flight
+(flight_id VARCHAR(15) NOT NULL,
+ destination_id VARCHAR(15),
+ aircraft_id VARCHAR(15),
+ staff_id VARCHAR(15),
+ reservation_id VARCHAR(15),
+ departure_date DATE,
+ departure_time VARCHAR(6),
+ primary key(flight_id),
+ foreign key(destination_id) references Destination(destination_id),
+ foreign key(aircraft_id) references Aircraft(aircraft_id),
+ foreign key(staff_id) references Staff(staff_id)
+);

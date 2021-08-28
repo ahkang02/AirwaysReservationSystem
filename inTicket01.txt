@@ -1,0 +1,21 @@
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3001', 'PYOB001', NULL, 743.33);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3002', 'PYCC002', NULL, 634.83);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4003', 'PYOB003', NULL, 1641.17);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4004', 'PYOB004', 'CNFRF001', 1871.00);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3005', 'PYOB005', 'CNFR002', 977.00);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3006', 'PYOB006', NULL, 631.29);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3007', 'PYCC007', 'CNFR003', 559.00);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4008', 'PYOB008', NULL, 1361.79);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3009', 'PYCC009', 'CNFC004', 818.00);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4010', 'PYCC010', NULL, 1355.39);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3011', 'PYCC011', NULL, 534.57);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4012', 'PYOB012', 'CNFC005', 1725.00);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4013', 'PYOB013', NULL, 1426.91);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4014', 'PYCC014', NULL, 1430.43);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3015', 'PYOB015', NULL, 557.73);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3016', 'PYOB016', 'CNFR006', 803.68);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4017', 'PYCC017', NULL, 1208.57);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4018', 'PYCC018', NULL, 1206.46);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC4019', 'PYOB019', NULL, 1171.5);
+insert into Ticket (ticket_id, payment_id, cancellation_id, price) values ('TC3020', 'PYCC020', NULL, 768.00);
+

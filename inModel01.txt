@@ -1,0 +1,10 @@
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDL001', '100', 'Leather', 'Business');
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDL002', '150', 'Leather', 'Business');
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDL003', '200', 'Leather', 'Business');
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDL004', '250', 'Leather', 'Business');
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDL005', '300', 'Leather', 'Business');
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDC006', '100', 'Cloth', 'Economy');
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDC007', '150', 'Cloth', 'Economy');
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDC008', '200', 'Cloth', 'Economy');
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDC009', '250', 'Cloth', 'Economy');
+insert into Model (model_id, total_seat, seat_material, seat_type) values ('MDC010', '300', 'Cloth', 'Economy');

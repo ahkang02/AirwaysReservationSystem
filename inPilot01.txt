@@ -1,0 +1,10 @@
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLM001', 'Ellen Showler', 7, 'Male', '019-2181 0678', 'eshowler0@ca.gov');
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLM002', 'Brandyn Lofts', 3, 'Male', '017-5296 0985', 'blofts1@photobucket.com');
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLM003', 'Davie Howis', 7, 'Male', '019-6166 8856', 'dhowis2@4shared.com');
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLM004', 'Janessa Moorerud', 2, 'Male', '018-4161 8703', 'jmoorerud3@rambler.ru');
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLM005', 'Rodrique Blinkhorn', 6, 'Male', '018-4748 2601', 'rblinkhorn4@amazon.co.uk');
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLM006', 'Cortie Surman-Wells', 3, 'Male', '019-5926 3158', 'csurmanwells5@globo.com');
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLM007', 'Karlyn Osmund', 4, 'Male', '019-2548 4902', 'kosmund6@blogtalkradio.com');
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLM008', 'Audre Smylie', 1, 'Male', '019-5687 9711', 'asmylie7@vinaora.com');
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLF009', 'Tomasine Wardlaw', 2, 'Female', '019-5631 4393', 'twardlaw8@japanpost.jp');
+insert into Pilot (pilot_id, pilot_name, experience, gender, contact_no, email) values ('PLM010', 'Dannie Steuhlmeyer', 6, 'Male', '019-9404 9074', 'dsteuhlmeyer9@toplist.cz');
